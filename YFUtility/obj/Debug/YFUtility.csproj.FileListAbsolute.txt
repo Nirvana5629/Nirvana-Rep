@@ -1,0 +1,6 @@
+D:\baidu_map\final\YFUtility\bin\Debug\YFUtility.dll
+D:\baidu_map\final\YFUtility\bin\Debug\YFUtility.pdb
+D:\baidu_map\final\YFUtility\obj\Debug\YFUtility.csproj.AssemblyReference.cache
+D:\baidu_map\final\YFUtility\obj\Debug\YFUtility.csproj.CoreCompileInputs.cache
+D:\baidu_map\final\YFUtility\obj\Debug\YFUtility.dll
+D:\baidu_map\final\YFUtility\obj\Debug\YFUtility.pdb

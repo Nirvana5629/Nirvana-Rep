@@ -1,0 +1,188 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>高速公路交通标志管理系统</title>
+    <link rel="stylesheet" type="text/css" href="./ext-2.2/resources/css/ext-all.css" />
+    <link rel="stylesheet" type="text/css" href="./css/siderbar.css" />
+    <script type="text/javascript" src="./ext-2.2/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="./ext-2.2/ext-all.js"></script>
+    <style type="text/css">
+        html, body {
+            font: normal 12px verdana;
+            margin: 0;
+            padding: 0;
+            border: 0 none;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .x-panel-body p {
+            margin: 5px;
+        }
+
+        .x-column-layout-ct .x-panel {
+            margin-bottom: 5px;
+        }
+
+        .x-column-layout-ct .x-panel-dd-spacer {
+            margin-bottom: 5px;
+        }
+
+        .settings {
+            background-image: url(./ext-2.2/examples/shared/icons/fam/folder_wrench.png) !important;
+        }
+
+        .nav {
+            background-image: url(./ext-2.2/examples/shared/icons/fam/folder_go.png) !important;
+        }
+        h9{
+            font-size:150%;
+            align-content:center;
+        }
+    </style>
+    <script type="text/javascript">
+
+        var welcomePanel = {
+            id: 'welcome-panel',
+            title: '欢迎',
+            layout: 'fit',
+            bodyStyle: 'padding:25px',
+            contentEl: 'welcomeDiv'  // pull existing content from the page
+        };
+
+        var tabPanel = new Ext.TabPanel({
+            id: "tabPanel",
+            region: 'center',
+            enableTabScroll: true,
+            deferredRender: false,
+            activeTab: 0,
+            iconCls: 'tabs',
+            items: [welcomePanel]
+        });
+
+        /**
+         * @param id	菜单的唯一编码
+         * @param url	菜单的对于的网络地址
+         * @param text	菜单的中文描述
+         * add by xujh 2009-03-27
+         **/
+        function setMenu(id, url, text) {
+            var tab = tabPanel.getComponent(id);
+            if (tab) {
+                tabPanel.remove(tab);
+            }
+            tab = tabPanel.add({
+                'id': id,
+                'title': text,
+                closable: true,
+                autoScroll: true,
+                html: '<iframe scrolling="auto" frameborder="0" width="100%"height="100%" src="'
+                    + url + '"></iframe>'
+            });
+            tabPanel.setActiveTab(tab);
+        };
+
+        var menu01 = '<div id="menu">' +
+            '<ul>' +
+            '<li><a href="javascript:setMenu(\'101\' ,\'map.aspx\' ,\'所有标志\');">所有标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'102\' ,\'m_ban.aspx\' ,\'禁令标志\');">禁令标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'103\' ,\'m_warn.aspx\' ,\'警告标志\');">警告标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'104\' ,\'m_zhishi.aspx\' ,\'指示标志\');">指示标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'105\' ,\'m_zhilu.aspx\' ,\'指路标志\');">指路标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'106\' ,\'m_gaoshi.aspx\' ,\'告示标志\');">告示标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'107\' ,\'m_lvyou.aspx\' ,\'旅游区标志\');">旅游区标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'108\' ,\'m_other.aspx\' ,\'非公路交通标志\');">非公路交通标志</a></li>' +
+            '</ul>' +
+            '</div>';
+
+        var menu02 = '<div id="menu">' +
+            '<ul>' +
+            '<li><a href="javascript:setMenu(\'201\' ,\'index1.aspx\' ,\'信息列表\');">信息列表</a></li>' +
+            '<li><a href="javascript:setMenu(\'202\' ,\'add.aspx\' ,\'添加标志\');">添加标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'203\' ,\'search.aspx\' ,\'查找标志\');">查找标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'204\' ,\'filter.aspx\' ,\'筛选标志\');">筛选标志</a></li>' +
+            '<li><a href="javascript:setMenu(\'205\' ,\'chart.aspx\' ,\'汇总标志\');">汇总标志</a></li>' +
+            '</ul>' +
+            '</div>';
+
+        var menu03 = '<div id="menu">' +
+            '<ul>' +
+            '<li><a href="javascript:setMenu(\'301\' ,\'encoding.aspx\' ,\'编码生成\');">编码生成</a></li>' +
+            '</ul>' +
+            '</div>';
+
+        Ext.onReady(function () {
+            Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+
+            //init main page framework
+            var viewport = new Ext.Viewport({
+                layout: 'border',
+                items: [{
+                    xtype: 'box',
+                    region: 'north',
+                    applyTo: 'header',
+                    height: 30
+                }, {
+                    region: 'west',
+                    id: 'west-panel',
+                    title: '菜单栏',
+                    split: true,
+                    width: 200,
+                    minSize: 175,
+                    maxSize: 400,
+                    collapsible: true,
+                    margins: '0 0 5 5',
+                    cmargins: '0 5 5 5',
+                    layout: 'accordion',
+                    layoutConfig: {
+                        animate: true
+                    },
+                    items: [{
+                        title: '地图显示',
+                        html: menu01,
+                        autoScroll: true,
+                        border: false,
+                        iconCls: 'nav'
+                    }, {
+                        title: '标志管理',
+                        html: menu02,
+                        border: false,
+                        autoScroll: true,
+                        iconCls: 'settings'
+                    }, {
+                        title: '编码生成',
+                        html: menu03,
+                        border: false,
+                        autoScroll: true,
+                        iconCls: 'settings'
+                    }]
+
+                }
+                    , tabPanel
+                ]
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="header">
+        <h1 align="center" ">
+            高速公路交通标志数字化管理系统
+        </h1>
+    </div>
+
+    <div style="display:none;">
+
+        <!-- Start page content -->
+        <div id="welcomeDiv">
+            <div style="float:left;"><img src="./images/layout-icon.gif" /></div>
+            <div style="margin-left:100px;text-align:left;">
+                <h2>欢迎访问!</h2>
+                <p>高速公路交通标志数字化管理系统</p>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

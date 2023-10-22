@@ -1,0 +1,11 @@
+D:\baidu_map\final\YFDAL\bin\Debug\YFDAL.dll
+D:\baidu_map\final\YFDAL\bin\Debug\YFDAL.pdb
+D:\baidu_map\final\YFDAL\bin\Debug\YFModel.dll
+D:\baidu_map\final\YFDAL\bin\Debug\YFUtility.dll
+D:\baidu_map\final\YFDAL\bin\Debug\YFModel.pdb
+D:\baidu_map\final\YFDAL\bin\Debug\YFUtility.pdb
+D:\baidu_map\final\YFDAL\obj\Debug\YFDAL.csproj.AssemblyReference.cache
+D:\baidu_map\final\YFDAL\obj\Debug\YFDAL.csproj.CoreCompileInputs.cache
+D:\baidu_map\final\YFDAL\obj\Debug\YFDAL.csproj.CopyComplete
+D:\baidu_map\final\YFDAL\obj\Debug\YFDAL.dll
+D:\baidu_map\final\YFDAL\obj\Debug\YFDAL.pdb

@@ -1,0 +1,6 @@
+D:\baidu_map\final\YFModel\bin\Debug\YFModel.dll
+D:\baidu_map\final\YFModel\bin\Debug\YFModel.pdb
+D:\baidu_map\final\YFModel\obj\Debug\YFModel.csproj.AssemblyReference.cache
+D:\baidu_map\final\YFModel\obj\Debug\YFModel.csproj.CoreCompileInputs.cache
+D:\baidu_map\final\YFModel\obj\Debug\YFModel.dll
+D:\baidu_map\final\YFModel\obj\Debug\YFModel.pdb

@@ -1,0 +1,1812 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E3F83ED-1CF4-4A98-8F50-873FDCD4DE93}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>final</RootNamespace>
+    <AssemblyName>final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44382</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="add.aspx" />
+    <Content Include="assets\css\bui-min.css" />
+    <Content Include="assets\css\dpl-min.css" />
+    <Content Include="assets\css\main-min.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\css\page-min.css" />
+    <Content Include="assets\css\page.css" />
+    <Content Include="assets\css\prettify.css" />
+    <Content Include="assets\img\hide_list.png" />
+    <Content Include="assets\img\icon1.png" />
+    <Content Include="assets\img\icon2.png" />
+    <Content Include="assets\img\left-slib.gif" />
+    <Content Include="assets\img\main-nav-bg.png" />
+    <Content Include="assets\img\main-nav-bg1.png" />
+    <Content Include="assets\img\main-nav-bg2.png" />
+    <Content Include="assets\img\menu.jpg" />
+    <Content Include="assets\img\nav.jpg" />
+    <Content Include="assets\img\nav_selected.png" />
+    <Content Include="assets\img\resource.jpg" />
+    <Content Include="assets\img\top.png" />
+    <Content Include="assets\js\bui-min.js" />
+    <Content Include="assets\js\bui.js" />
+    <Content Include="assets\js\common\build.xml" />
+    <Content Include="assets\js\common\main-min.js" />
+    <Content Include="assets\js\common\main.js" />
+    <Content Include="assets\js\common\page-min.js" />
+    <Content Include="assets\js\common\page.js" />
+    <Content Include="assets\js\common\search-min.js" />
+    <Content Include="assets\js\common\search.js" />
+    <Content Include="assets\js\config-min.js" />
+    <Content Include="assets\js\config.js" />
+    <Content Include="assets\js\editor-min.js" />
+    <Content Include="assets\js\jquery-1.8.1.min.js" />
+    <Content Include="assets\js\module\build.xml" />
+    <Content Include="assets\js\prettify.js" />
+    <Content Include="assets\js\toolbar-min.js" />
+    <Content Include="assets\js\tree-min.js" />
+    <Content Include="chart.aspx" />
+    <Content Include="Css\bootstrap-responsive.css" />
+    <Content Include="Css\bootstrap-responsive.min.css" />
+    <Content Include="Css\bootstrap.css" />
+    <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\ext-2.2\adapter\ext\ext-base.js" />
+    <Content Include="Css\ext-2.2\adapter\jquery\ext-jquery-adapter.js" />
+    <Content Include="Css\ext-2.2\adapter\jquery\jquery.js" />
+    <Content Include="Css\ext-2.2\adapter\prototype\effects.js" />
+    <Content Include="Css\ext-2.2\adapter\prototype\ext-prototype-adapter.js" />
+    <Content Include="Css\ext-2.2\adapter\prototype\prototype.js" />
+    <Content Include="Css\ext-2.2\adapter\prototype\scriptaculous.js" />
+    <Content Include="Css\ext-2.2\adapter\yui\ext-yui-adapter.js" />
+    <Content Include="Css\ext-2.2\adapter\yui\yui-utilities.js" />
+    <Content Include="Css\ext-2.2\ext-all-debug.js" />
+    <Content Include="Css\ext-2.2\ext-all.js" />
+    <Content Include="Css\ext-2.2\ext-core-debug.js" />
+    <Content Include="Css\ext-2.2\ext-core.js" />
+    <Content Include="Css\ext-2.2\INCLUDE_ORDER.txt" />
+    <Content Include="Css\ext-2.2\license.txt" />
+    <Content Include="Css\ext-2.2\resources\css\borders.css" />
+    <Content Include="Css\ext-2.2\resources\css\box.css" />
+    <Content Include="Css\ext-2.2\resources\css\button.css" />
+    <Content Include="Css\ext-2.2\resources\css\combo.css" />
+    <Content Include="Css\ext-2.2\resources\css\core.css" />
+    <Content Include="Css\ext-2.2\resources\css\date-picker.css" />
+    <Content Include="Css\ext-2.2\resources\css\dd.css" />
+    <Content Include="Css\ext-2.2\resources\css\debug.css" />
+    <Content Include="Css\ext-2.2\resources\css\dialog.css" />
+    <Content Include="Css\ext-2.2\resources\css\editor.css" />
+    <Content Include="Css\ext-2.2\resources\css\ext-all.css" />
+    <Content Include="Css\ext-2.2\resources\css\form.css" />
+    <Content Include="Css\ext-2.2\resources\css\grid.css" />
+    <Content Include="Css\ext-2.2\resources\css\layout.css" />
+    <Content Include="Css\ext-2.2\resources\css\menu.css" />
+    <Content Include="Css\ext-2.2\resources\css\panel.css" />
+    <Content Include="Css\ext-2.2\resources\css\progress.css" />
+    <Content Include="Css\ext-2.2\resources\css\qtips.css" />
+    <Content Include="Css\ext-2.2\resources\css\README.txt" />
+    <Content Include="Css\ext-2.2\resources\css\reset-min.css" />
+    <Content Include="Css\ext-2.2\resources\css\reset.css" />
+    <Content Include="Css\ext-2.2\resources\css\resizable.css" />
+    <Content Include="Css\ext-2.2\resources\css\slider.css" />
+    <Content Include="Css\ext-2.2\resources\css\tabs.css" />
+    <Content Include="Css\ext-2.2\resources\css\toolbar.css" />
+    <Content Include="Css\ext-2.2\resources\css\tree.css" />
+    <Content Include="Css\ext-2.2\resources\css\window.css" />
+    <Content Include="Css\ext-2.2\resources\css\xtheme-gray.css" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\corners-blue.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\corners.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\l-blue.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\l.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\r-blue.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\r.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\tb-blue.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\box\tb.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\button\btn-arrow.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\button\btn-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\dd\drop-add.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\dd\drop-no.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\dd\drop-yes.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\editor\tb-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\checkbox.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\clear-trigger.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\date-trigger.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\error-tip-corners.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\exclamation.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\radio.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\search-trigger.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\text-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\trigger-tpl.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\trigger.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\gradient-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\arrow-left-white.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\arrow-right-white.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\col-move-bottom.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\col-move-top.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\columns.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\dirty.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\done.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\drop-no.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\drop-yes.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\footer-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid-blue-hd.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid-blue-split.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid-hrow.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid-loading.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid-split.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid-vista-hd.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid3-hrow.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid3-special-col-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\group-by.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\group-expand-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\hd-pop.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\hmenu-asc.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\hmenu-desc.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\hmenu-lock.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\hmenu-lock.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\hmenu-unlock.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\hmenu-unlock.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\invalid_line.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\loading.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\mso-hd.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\nowait.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-first-disabled.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-first.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-last-disabled.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-last.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-next-disabled.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-next.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-prev-disabled.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\page-prev.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\pick-button.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\refresh.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\row-check-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\row-expand-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\row-over.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\row-sel.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\sort_asc.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\sort_desc.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\grid\wait.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\collapse.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\expand.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\gradient-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\mini-bottom.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\mini-left.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\mini-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\mini-top.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\ns-collapse.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\ns-expand.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\panel-close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\panel-title-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\panel-title-light-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\stick.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\stuck.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\tab-close-on.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\layout\tab-close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\menu\checked.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\menu\group-checked.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\menu\item-over.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\menu\menu-parent.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\menu\menu.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\menu\unchecked.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\corners-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\left-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\light-hd.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\tool-sprite-tpl.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\tool-sprites.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\tools-sprites-trans.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\top-bottom.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\top-bottom.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\white-corners-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\white-left-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\panel\white-top-bottom.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\progress\progress-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\qtip\bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\qtip\close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\qtip\tip-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\s.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shadow-c.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\shadow-lr.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\shadow.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\blue-loading.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\calendar.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\glass-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\hd-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\large-loading.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\left-btn.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\loading-balls.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\right-btn.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\shared\warning.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\e-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\e-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\ne-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\nw-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\s-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\s-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\se-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\se-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\square.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\sizer\sw-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\slider\slider-bg.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\slider\slider-thumb.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\slider\slider-v-bg.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\slider\slider-v-thumb.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\scroll-left.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\scroll-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\scroller-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-strip-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-strip-bg.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tabs\tabs-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\toolbar\bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\toolbar\btn-arrow-light.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\toolbar\btn-arrow.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\toolbar\btn-over-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\toolbar\gray-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\toolbar\tb-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\arrows.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\drop-add.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\drop-between.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\drop-no.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\drop-over.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\drop-under.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\drop-yes.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-end-minus.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-end-plus.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-end.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-line.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-minus.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow-plus.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\elbow.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\folder-open.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\folder.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\leaf.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\loading.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\tree\s.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\icon-error.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\icon-info.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\icon-question.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\icon-warning.gif" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\left-corners.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\left-right.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\right-corners.png" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\top-bottom.png" />
+    <Content Include="Css\ext-2.2\resources\images\gray\button\btn-arrow.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\button\btn-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\gradient-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\corners-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\left-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\light-hd.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\tool-sprite-tpl.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\tool-sprites.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\tools-sprites-trans.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\top-bottom.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\top-bottom.png" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\white-corners-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\white-left-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\panel\white-top-bottom.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\qtip\bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\qtip\close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\qtip\tip-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\s.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\scroll-left.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\scroll-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\scroller-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-strip-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-strip-bg.png" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\tabs\tabs-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\toolbar\bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\toolbar\btn-arrow-light.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\toolbar\btn-arrow.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\toolbar\btn-over-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\toolbar\gray-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\toolbar\tb-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\icon-error.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\icon-info.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\icon-question.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\icon-warning.gif" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\left-corners.png" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\left-right.png" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\right-corners.png" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\top-bottom.png" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\bg-center.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\bg-left.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\bg-right.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\collapse.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\dlg-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\e-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\expand.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\hd-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\s-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\se-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\basic-dialog\w-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\gradient-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\grid\grid-split.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\grid\grid-vista-hd.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\collapse.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\expand.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\gradient-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\ns-collapse.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\ns-expand.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\panel-close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\panel-title-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\panel-title-light-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\stick.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\tab-close-on.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\layout\tab-close.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\qtip\bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\qtip\tip-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\s.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\e-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\e-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\ne-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\ne-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\nw-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\nw-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\s-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\s-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\se-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\se-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\sw-handle-dark.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\sizer\sw-handle.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\tabs\tab-sprite.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\toolbar\gray-bg.gif" />
+    <Content Include="Css\ext-2.2\resources\images\vista\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Css\ext-2.2\source\adapter\ext-base.js" />
+    <Content Include="Css\ext-2.2\source\adapter\jquery-bridge.js" />
+    <Content Include="Css\ext-2.2\source\adapter\prototype-bridge.js" />
+    <Content Include="Css\ext-2.2\source\adapter\yui-bridge.js" />
+    <Content Include="Css\ext-2.2\source\core\CompositeElement.js" />
+    <Content Include="Css\ext-2.2\source\core\DomHelper.js" />
+    <Content Include="Css\ext-2.2\source\core\DomQuery.js" />
+    <Content Include="Css\ext-2.2\source\core\Element.js" />
+    <Content Include="Css\ext-2.2\source\core\EventManager.js" />
+    <Content Include="Css\ext-2.2\source\core\Ext.js" />
+    <Content Include="Css\ext-2.2\source\core\Fx.js" />
+    <Content Include="Css\ext-2.2\source\core\Template.js" />
+    <Content Include="Css\ext-2.2\source\core\UpdateManager.js" />
+    <Content Include="Css\ext-2.2\source\data\ArrayReader.js" />
+    <Content Include="Css\ext-2.2\source\data\Connection.js" />
+    <Content Include="Css\ext-2.2\source\data\DataField.js" />
+    <Content Include="Css\ext-2.2\source\data\DataProxy.js" />
+    <Content Include="Css\ext-2.2\source\data\DataReader.js" />
+    <Content Include="Css\ext-2.2\source\data\GroupingStore.js" />
+    <Content Include="Css\ext-2.2\source\data\HttpProxy.js" />
+    <Content Include="Css\ext-2.2\source\data\JsonReader.js" />
+    <Content Include="Css\ext-2.2\source\data\JsonStore.js" />
+    <Content Include="Css\ext-2.2\source\data\MemoryProxy.js" />
+    <Content Include="Css\ext-2.2\source\data\Record.js" />
+    <Content Include="Css\ext-2.2\source\data\ScriptTagProxy.js" />
+    <Content Include="Css\ext-2.2\source\data\SimpleStore.js" />
+    <Content Include="Css\ext-2.2\source\data\SortTypes.js" />
+    <Content Include="Css\ext-2.2\source\data\Store.js" />
+    <Content Include="Css\ext-2.2\source\data\StoreMgr.js" />
+    <Content Include="Css\ext-2.2\source\data\Tree.js" />
+    <Content Include="Css\ext-2.2\source\data\XmlReader.js" />
+    <Content Include="Css\ext-2.2\source\dd\DDCore.js" />
+    <Content Include="Css\ext-2.2\source\dd\DragSource.js" />
+    <Content Include="Css\ext-2.2\source\dd\DragTracker.js" />
+    <Content Include="Css\ext-2.2\source\dd\DragZone.js" />
+    <Content Include="Css\ext-2.2\source\dd\DropTarget.js" />
+    <Content Include="Css\ext-2.2\source\dd\DropZone.js" />
+    <Content Include="Css\ext-2.2\source\dd\Registry.js" />
+    <Content Include="Css\ext-2.2\source\dd\ScrollManager.js" />
+    <Content Include="Css\ext-2.2\source\dd\StatusProxy.js" />
+    <Content Include="Css\ext-2.2\source\debug.js" />
+    <Content Include="Css\ext-2.2\source\license.txt" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-af.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-bg.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-ca.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-cs.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-da.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-de.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-el_GR.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-en.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-en_UK.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-es.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-fa.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-fr.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-fr_CA.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-gr.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-he.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-hr.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-hu.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-id.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-it.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-ja.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-ko.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-lt.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-lv.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-mk.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-nl.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-no_NB.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-no_NN.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-pl.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-pt.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-pt_BR.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-ro.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-ru.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-sk.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-sl.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-sr.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-sr_RS.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-sv_SE.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-th.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-tr.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-ukr.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-vn.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-zh_CN.js" />
+    <Content Include="Css\ext-2.2\source\locale\ext-lang-zh_TW.js" />
+    <Content Include="Css\ext-2.2\source\state\CookieProvider.js" />
+    <Content Include="Css\ext-2.2\source\state\Provider.js" />
+    <Content Include="Css\ext-2.2\source\state\StateManager.js" />
+    <Content Include="Css\ext-2.2\source\util\ClickRepeater.js" />
+    <Content Include="Css\ext-2.2\source\util\CSS.js" />
+    <Content Include="Css\ext-2.2\source\util\Date.js" />
+    <Content Include="Css\ext-2.2\source\util\DelayedTask.js" />
+    <Content Include="Css\ext-2.2\source\util\Format.js" />
+    <Content Include="Css\ext-2.2\source\util\History.js" />
+    <Content Include="Css\ext-2.2\source\util\JSON.js" />
+    <Content Include="Css\ext-2.2\source\util\KeyMap.js" />
+    <Content Include="Css\ext-2.2\source\util\KeyNav.js" />
+    <Content Include="Css\ext-2.2\source\util\MixedCollection.js" />
+    <Content Include="Css\ext-2.2\source\util\Observable.js" />
+    <Content Include="Css\ext-2.2\source\util\TaskMgr.js" />
+    <Content Include="Css\ext-2.2\source\util\TextMetrics.js" />
+    <Content Include="Css\ext-2.2\source\util\XTemplate.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Action.js" />
+    <Content Include="Css\ext-2.2\source\widgets\BoxComponent.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Button.js" />
+    <Content Include="Css\ext-2.2\source\widgets\ColorPalette.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Component.js" />
+    <Content Include="Css\ext-2.2\source\widgets\ComponentMgr.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Container.js" />
+    <Content Include="Css\ext-2.2\source\widgets\CycleButton.js" />
+    <Content Include="Css\ext-2.2\source\widgets\DataView.js" />
+    <Content Include="Css\ext-2.2\source\widgets\DatePicker.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Editor.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Action.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\BasicForm.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Checkbox.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\CheckboxGroup.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Combo.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\DateField.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Field.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\FieldSet.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Form.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Hidden.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\HtmlEditor.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Label.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\NumberField.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\Radio.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\RadioGroup.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\TextArea.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\TextField.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\TimeField.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\TriggerField.js" />
+    <Content Include="Css\ext-2.2\source\widgets\form\VTypes.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\AbstractSelectionModel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\CellSelectionModel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\CheckboxSelectionModel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\ColumnDD.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\ColumnModel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\ColumnSplitDD.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\EditorGrid.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\GridDD.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\GridEditor.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\GridPanel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\GridView.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\GroupingView.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\PropertyGrid.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\RowNumberer.js" />
+    <Content Include="Css\ext-2.2\source\widgets\grid\RowSelectionModel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Layer.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\AbsoluteLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\AccordionLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\AnchorLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\BorderLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\CardLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\ColumnLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\ContainerLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\FitLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\FormLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\layout\TableLayout.js" />
+    <Content Include="Css\ext-2.2\source\widgets\LoadMask.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\Adapter.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\BaseItem.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\CheckItem.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\ColorItem.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\ColorMenu.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\DateItem.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\DateMenu.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\Item.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\Menu.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\MenuMgr.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\Separator.js" />
+    <Content Include="Css\ext-2.2\source\widgets\menu\TextItem.js" />
+    <Content Include="Css\ext-2.2\source\widgets\MessageBox.js" />
+    <Content Include="Css\ext-2.2\source\widgets\PagingToolbar.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Panel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\PanelDD.js" />
+    <Content Include="Css\ext-2.2\source\widgets\ProgressBar.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Resizable.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Shadow.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Slider.js" />
+    <Content Include="Css\ext-2.2\source\widgets\SplitBar.js" />
+    <Content Include="Css\ext-2.2\source\widgets\SplitButton.js" />
+    <Content Include="Css\ext-2.2\source\widgets\StatusBar.js" />
+    <Content Include="Css\ext-2.2\source\widgets\TabPanel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tips\QuickTip.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tips\QuickTips.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tips\Tip.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tips\ToolTip.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Toolbar.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\AsyncTreeNode.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeDragZone.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeDropZone.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeEditor.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeEventModel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeFilter.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeLoader.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeNode.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeNodeUI.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreePanel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeSelectionModel.js" />
+    <Content Include="Css\ext-2.2\source\widgets\tree\TreeSorter.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Viewport.js" />
+    <Content Include="Css\ext-2.2\source\widgets\Window.js" />
+    <Content Include="Css\ext-2.2\source\widgets\WindowManager.js" />
+    <Content Include="Css\ext-all.css" />
+    <Content Include="Css\file-upload.css" />
+    <Content Include="Css\main.css" />
+    <Content Include="Css\prettyAccessibleForms\css\cmxform.css" />
+    <Content Include="Css\prettyAccessibleForms\css\core.css" />
+    <Content Include="Css\prettyAccessibleForms\css\reset.css" />
+    <Content Include="Css\prettyAccessibleForms\css\screen.css" />
+    <Content Include="Css\prettyAccessibleForms\css\_library\cmxform.css" />
+    <Content Include="Css\prettyAccessibleForms\images\cmxform-divider.gif" />
+    <Content Include="Css\prettyAccessibleForms\images\cmxform-fieldset.gif" />
+    <Content Include="Css\siderbar.css" />
+    <Content Include="Css\siderbar.gif" />
+    <Content Include="Css\style.css" />
+    <Content Include="Css\style1.css" />
+    <Content Include="Css\style2.css" />
+    <Content Include="Css\table\images\bg_header.jpg" />
+    <Content Include="Css\table\images\bullet1.gif" />
+    <Content Include="Css\table\images\bullet2.gif" />
+    <Content Include="Css\table\styles.css" />
+    <Content Include="Css\table\xtab.css" />
+    <Content Include="encoding.aspx" />
+    <Content Include="ext-2.2\adapter\ext\ext-base.js" />
+    <Content Include="ext-2.2\adapter\jquery\ext-jquery-adapter.js" />
+    <Content Include="ext-2.2\adapter\jquery\jquery.js" />
+    <Content Include="ext-2.2\adapter\prototype\effects.js" />
+    <Content Include="ext-2.2\adapter\prototype\ext-prototype-adapter.js" />
+    <Content Include="ext-2.2\adapter\prototype\prototype.js" />
+    <Content Include="ext-2.2\adapter\prototype\scriptaculous.js" />
+    <Content Include="ext-2.2\adapter\yui\ext-yui-adapter.js" />
+    <Content Include="ext-2.2\adapter\yui\yui-utilities.js" />
+    <Content Include="ext-2.2\ext-all-debug.js" />
+    <Content Include="ext-2.2\ext-all.js" />
+    <Content Include="ext-2.2\ext-core-debug.js" />
+    <Content Include="ext-2.2\ext-core.js" />
+    <Content Include="ext-2.2\INCLUDE_ORDER.txt" />
+    <Content Include="ext-2.2\license.txt" />
+    <Content Include="ext-2.2\resources\css\borders.css" />
+    <Content Include="ext-2.2\resources\css\box.css" />
+    <Content Include="ext-2.2\resources\css\button.css" />
+    <Content Include="ext-2.2\resources\css\combo.css" />
+    <Content Include="ext-2.2\resources\css\core.css" />
+    <Content Include="ext-2.2\resources\css\date-picker.css" />
+    <Content Include="ext-2.2\resources\css\dd.css" />
+    <Content Include="ext-2.2\resources\css\debug.css" />
+    <Content Include="ext-2.2\resources\css\dialog.css" />
+    <Content Include="ext-2.2\resources\css\editor.css" />
+    <Content Include="ext-2.2\resources\css\ext-all.css" />
+    <Content Include="ext-2.2\resources\css\form.css" />
+    <Content Include="ext-2.2\resources\css\grid.css" />
+    <Content Include="ext-2.2\resources\css\layout.css" />
+    <Content Include="ext-2.2\resources\css\menu.css" />
+    <Content Include="ext-2.2\resources\css\panel.css" />
+    <Content Include="ext-2.2\resources\css\progress.css" />
+    <Content Include="ext-2.2\resources\css\qtips.css" />
+    <Content Include="ext-2.2\resources\css\README.txt" />
+    <Content Include="ext-2.2\resources\css\reset-min.css" />
+    <Content Include="ext-2.2\resources\css\reset.css" />
+    <Content Include="ext-2.2\resources\css\resizable.css" />
+    <Content Include="ext-2.2\resources\css\slider.css" />
+    <Content Include="ext-2.2\resources\css\tabs.css" />
+    <Content Include="ext-2.2\resources\css\toolbar.css" />
+    <Content Include="ext-2.2\resources\css\tree.css" />
+    <Content Include="ext-2.2\resources\css\window.css" />
+    <Content Include="ext-2.2\resources\css\xtheme-gray.css" />
+    <Content Include="ext-2.2\resources\images\default\box\corners-blue.gif" />
+    <Content Include="ext-2.2\resources\images\default\box\corners.gif" />
+    <Content Include="ext-2.2\resources\images\default\box\l-blue.gif" />
+    <Content Include="ext-2.2\resources\images\default\box\l.gif" />
+    <Content Include="ext-2.2\resources\images\default\box\r-blue.gif" />
+    <Content Include="ext-2.2\resources\images\default\box\r.gif" />
+    <Content Include="ext-2.2\resources\images\default\box\tb-blue.gif" />
+    <Content Include="ext-2.2\resources\images\default\box\tb.gif" />
+    <Content Include="ext-2.2\resources\images\default\button\btn-arrow.gif" />
+    <Content Include="ext-2.2\resources\images\default\button\btn-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\dd\drop-add.gif" />
+    <Content Include="ext-2.2\resources\images\default\dd\drop-no.gif" />
+    <Content Include="ext-2.2\resources\images\default\dd\drop-yes.gif" />
+    <Content Include="ext-2.2\resources\images\default\editor\tb-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\checkbox.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\clear-trigger.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\date-trigger.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\error-tip-corners.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\exclamation.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\radio.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\search-trigger.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\text-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\trigger-tpl.gif" />
+    <Content Include="ext-2.2\resources\images\default\form\trigger.gif" />
+    <Content Include="ext-2.2\resources\images\default\gradient-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\arrow-left-white.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\arrow-right-white.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\col-move-bottom.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\col-move-top.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\columns.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\dirty.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\done.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\drop-no.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\drop-yes.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\footer-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid-blue-hd.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid-blue-split.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid-hrow.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid-loading.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid-split.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid-vista-hd.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid3-hrow.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid3-special-col-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\group-by.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\group-expand-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\hd-pop.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\hmenu-asc.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\hmenu-desc.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\hmenu-lock.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\hmenu-lock.png" />
+    <Content Include="ext-2.2\resources\images\default\grid\hmenu-unlock.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\hmenu-unlock.png" />
+    <Content Include="ext-2.2\resources\images\default\grid\invalid_line.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\loading.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\mso-hd.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\nowait.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-first-disabled.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-first.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-last-disabled.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-last.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-next-disabled.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-next.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-prev-disabled.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\page-prev.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\pick-button.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\refresh.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\row-check-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\row-expand-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\row-over.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\row-sel.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\sort_asc.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\sort_desc.gif" />
+    <Content Include="ext-2.2\resources\images\default\grid\wait.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\collapse.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\expand.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\gradient-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\mini-bottom.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\mini-left.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\mini-right.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\mini-top.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\ns-collapse.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\ns-expand.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\panel-close.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\panel-title-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\panel-title-light-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\stick.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\stuck.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\tab-close-on.gif" />
+    <Content Include="ext-2.2\resources\images\default\layout\tab-close.gif" />
+    <Content Include="ext-2.2\resources\images\default\menu\checked.gif" />
+    <Content Include="ext-2.2\resources\images\default\menu\group-checked.gif" />
+    <Content Include="ext-2.2\resources\images\default\menu\item-over.gif" />
+    <Content Include="ext-2.2\resources\images\default\menu\menu-parent.gif" />
+    <Content Include="ext-2.2\resources\images\default\menu\menu.gif" />
+    <Content Include="ext-2.2\resources\images\default\menu\unchecked.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\corners-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\left-right.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\light-hd.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\tool-sprite-tpl.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\tool-sprites.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\tools-sprites-trans.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\top-bottom.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\top-bottom.png" />
+    <Content Include="ext-2.2\resources\images\default\panel\white-corners-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\white-left-right.gif" />
+    <Content Include="ext-2.2\resources\images\default\panel\white-top-bottom.gif" />
+    <Content Include="ext-2.2\resources\images\default\progress\progress-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\qtip\bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\qtip\close.gif" />
+    <Content Include="ext-2.2\resources\images\default\qtip\tip-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\s.gif" />
+    <Content Include="ext-2.2\resources\images\default\shadow-c.png" />
+    <Content Include="ext-2.2\resources\images\default\shadow-lr.png" />
+    <Content Include="ext-2.2\resources\images\default\shadow.png" />
+    <Content Include="ext-2.2\resources\images\default\shared\blue-loading.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\calendar.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\glass-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\hd-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\large-loading.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\left-btn.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\loading-balls.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\right-btn.gif" />
+    <Content Include="ext-2.2\resources\images\default\shared\warning.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\e-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\e-handle.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\ne-handle.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\nw-handle.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\s-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\s-handle.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\se-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\se-handle.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\square.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\default\sizer\sw-handle.gif" />
+    <Content Include="ext-2.2\resources\images\default\slider\slider-bg.png" />
+    <Content Include="ext-2.2\resources\images\default\slider\slider-thumb.png" />
+    <Content Include="ext-2.2\resources\images\default\slider\slider-v-bg.png" />
+    <Content Include="ext-2.2\resources\images\default\slider\slider-v-thumb.png" />
+    <Content Include="ext-2.2\resources\images\default\tabs\scroll-left.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\scroll-right.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\scroller-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-btm-left-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-btm-right-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-close.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-strip-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-strip-bg.png" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\tabs\tabs-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\toolbar\bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\toolbar\btn-arrow-light.gif" />
+    <Content Include="ext-2.2\resources\images\default\toolbar\btn-arrow.gif" />
+    <Content Include="ext-2.2\resources\images\default\toolbar\btn-over-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\toolbar\gray-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\toolbar\tb-bg.gif" />
+    <Content Include="ext-2.2\resources\images\default\toolbar\tb-btn-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\arrows.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\drop-add.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\drop-between.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\drop-no.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\drop-over.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\drop-under.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\drop-yes.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-end-minus.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-end-plus.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-end.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-line.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-minus.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow-plus.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\elbow.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\folder-open.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\folder.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\leaf.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\loading.gif" />
+    <Content Include="ext-2.2\resources\images\default\tree\s.gif" />
+    <Content Include="ext-2.2\resources\images\default\window\icon-error.gif" />
+    <Content Include="ext-2.2\resources\images\default\window\icon-info.gif" />
+    <Content Include="ext-2.2\resources\images\default\window\icon-question.gif" />
+    <Content Include="ext-2.2\resources\images\default\window\icon-warning.gif" />
+    <Content Include="ext-2.2\resources\images\default\window\left-corners.png" />
+    <Content Include="ext-2.2\resources\images\default\window\left-right.png" />
+    <Content Include="ext-2.2\resources\images\default\window\right-corners.png" />
+    <Content Include="ext-2.2\resources\images\default\window\top-bottom.png" />
+    <Content Include="ext-2.2\resources\images\gray\button\btn-arrow.gif" />
+    <Content Include="ext-2.2\resources\images\gray\button\btn-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\gray\gradient-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\corners-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\left-right.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\light-hd.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\tool-sprite-tpl.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\tool-sprites.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\tools-sprites-trans.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\top-bottom.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\top-bottom.png" />
+    <Content Include="ext-2.2\resources\images\gray\panel\white-corners-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\white-left-right.gif" />
+    <Content Include="ext-2.2\resources\images\gray\panel\white-top-bottom.gif" />
+    <Content Include="ext-2.2\resources\images\gray\qtip\bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\qtip\close.gif" />
+    <Content Include="ext-2.2\resources\images\gray\qtip\tip-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\gray\s.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\scroll-left.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\scroll-right.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\scroller-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-btm-left-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-btm-right-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-close.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-strip-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-strip-bg.png" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\tabs\tabs-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\gray\toolbar\bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\toolbar\btn-arrow-light.gif" />
+    <Content Include="ext-2.2\resources\images\gray\toolbar\btn-arrow.gif" />
+    <Content Include="ext-2.2\resources\images\gray\toolbar\btn-over-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\toolbar\gray-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\toolbar\tb-bg.gif" />
+    <Content Include="ext-2.2\resources\images\gray\toolbar\tb-btn-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\gray\window\icon-error.gif" />
+    <Content Include="ext-2.2\resources\images\gray\window\icon-info.gif" />
+    <Content Include="ext-2.2\resources\images\gray\window\icon-question.gif" />
+    <Content Include="ext-2.2\resources\images\gray\window\icon-warning.gif" />
+    <Content Include="ext-2.2\resources\images\gray\window\left-corners.png" />
+    <Content Include="ext-2.2\resources\images\gray\window\left-right.png" />
+    <Content Include="ext-2.2\resources\images\gray\window\right-corners.png" />
+    <Content Include="ext-2.2\resources\images\gray\window\top-bottom.png" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\bg-center.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\bg-left.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\bg-right.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\close.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\collapse.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\dlg-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\e-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\expand.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\hd-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\s-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\se-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\basic-dialog\w-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\gradient-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\grid\grid-split.gif" />
+    <Content Include="ext-2.2\resources\images\vista\grid\grid-vista-hd.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\collapse.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\expand.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\gradient-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\ns-collapse.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\ns-expand.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\panel-close.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\panel-title-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\panel-title-light-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\stick.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\tab-close-on.gif" />
+    <Content Include="ext-2.2\resources\images\vista\layout\tab-close.gif" />
+    <Content Include="ext-2.2\resources\images\vista\qtip\bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\qtip\tip-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\vista\s.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\e-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\e-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\ne-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\ne-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\nw-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\nw-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\s-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\s-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\se-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\se-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\sw-handle-dark.gif" />
+    <Content Include="ext-2.2\resources\images\vista\sizer\sw-handle.gif" />
+    <Content Include="ext-2.2\resources\images\vista\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\tabs\tab-btm-left-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\tabs\tab-btm-right-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\tabs\tab-sprite.gif" />
+    <Content Include="ext-2.2\resources\images\vista\toolbar\gray-bg.gif" />
+    <Content Include="ext-2.2\resources\images\vista\toolbar\tb-btn-sprite.gif" />
+    <Content Include="ext-2.2\source\adapter\ext-base.js" />
+    <Content Include="ext-2.2\source\adapter\jquery-bridge.js" />
+    <Content Include="ext-2.2\source\adapter\prototype-bridge.js" />
+    <Content Include="ext-2.2\source\adapter\yui-bridge.js" />
+    <Content Include="ext-2.2\source\core\CompositeElement.js" />
+    <Content Include="ext-2.2\source\core\DomHelper.js" />
+    <Content Include="ext-2.2\source\core\DomQuery.js" />
+    <Content Include="ext-2.2\source\core\Element.js" />
+    <Content Include="ext-2.2\source\core\EventManager.js" />
+    <Content Include="ext-2.2\source\core\Ext.js" />
+    <Content Include="ext-2.2\source\core\Fx.js" />
+    <Content Include="ext-2.2\source\core\Template.js" />
+    <Content Include="ext-2.2\source\core\UpdateManager.js" />
+    <Content Include="ext-2.2\source\data\ArrayReader.js" />
+    <Content Include="ext-2.2\source\data\Connection.js" />
+    <Content Include="ext-2.2\source\data\DataField.js" />
+    <Content Include="ext-2.2\source\data\DataProxy.js" />
+    <Content Include="ext-2.2\source\data\DataReader.js" />
+    <Content Include="ext-2.2\source\data\GroupingStore.js" />
+    <Content Include="ext-2.2\source\data\HttpProxy.js" />
+    <Content Include="ext-2.2\source\data\JsonReader.js" />
+    <Content Include="ext-2.2\source\data\JsonStore.js" />
+    <Content Include="ext-2.2\source\data\MemoryProxy.js" />
+    <Content Include="ext-2.2\source\data\Record.js" />
+    <Content Include="ext-2.2\source\data\ScriptTagProxy.js" />
+    <Content Include="ext-2.2\source\data\SimpleStore.js" />
+    <Content Include="ext-2.2\source\data\SortTypes.js" />
+    <Content Include="ext-2.2\source\data\Store.js" />
+    <Content Include="ext-2.2\source\data\StoreMgr.js" />
+    <Content Include="ext-2.2\source\data\Tree.js" />
+    <Content Include="ext-2.2\source\data\XmlReader.js" />
+    <Content Include="ext-2.2\source\dd\DDCore.js" />
+    <Content Include="ext-2.2\source\dd\DragSource.js" />
+    <Content Include="ext-2.2\source\dd\DragTracker.js" />
+    <Content Include="ext-2.2\source\dd\DragZone.js" />
+    <Content Include="ext-2.2\source\dd\DropTarget.js" />
+    <Content Include="ext-2.2\source\dd\DropZone.js" />
+    <Content Include="ext-2.2\source\dd\Registry.js" />
+    <Content Include="ext-2.2\source\dd\ScrollManager.js" />
+    <Content Include="ext-2.2\source\dd\StatusProxy.js" />
+    <Content Include="ext-2.2\source\debug.js" />
+    <Content Include="ext-2.2\source\license.txt" />
+    <Content Include="ext-2.2\source\locale\ext-lang-af.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-bg.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-ca.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-cs.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-da.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-de.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-el_GR.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-en.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-en_UK.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-es.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-fa.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-fr.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-fr_CA.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-gr.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-he.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-hr.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-hu.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-id.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-it.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-ja.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-ko.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-lt.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-lv.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-mk.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-nl.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-no_NB.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-no_NN.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-pl.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-pt.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-pt_BR.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-ro.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-ru.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-sk.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-sl.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-sr.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-sr_RS.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-sv_SE.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-th.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-tr.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-ukr.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-vn.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-zh_CN.js" />
+    <Content Include="ext-2.2\source\locale\ext-lang-zh_TW.js" />
+    <Content Include="ext-2.2\source\state\CookieProvider.js" />
+    <Content Include="ext-2.2\source\state\Provider.js" />
+    <Content Include="ext-2.2\source\state\StateManager.js" />
+    <Content Include="ext-2.2\source\util\ClickRepeater.js" />
+    <Content Include="ext-2.2\source\util\CSS.js" />
+    <Content Include="ext-2.2\source\util\Date.js" />
+    <Content Include="ext-2.2\source\util\DelayedTask.js" />
+    <Content Include="ext-2.2\source\util\Format.js" />
+    <Content Include="ext-2.2\source\util\History.js" />
+    <Content Include="ext-2.2\source\util\JSON.js" />
+    <Content Include="ext-2.2\source\util\KeyMap.js" />
+    <Content Include="ext-2.2\source\util\KeyNav.js" />
+    <Content Include="ext-2.2\source\util\MixedCollection.js" />
+    <Content Include="ext-2.2\source\util\Observable.js" />
+    <Content Include="ext-2.2\source\util\TaskMgr.js" />
+    <Content Include="ext-2.2\source\util\TextMetrics.js" />
+    <Content Include="ext-2.2\source\util\XTemplate.js" />
+    <Content Include="ext-2.2\source\widgets\Action.js" />
+    <Content Include="ext-2.2\source\widgets\BoxComponent.js" />
+    <Content Include="ext-2.2\source\widgets\Button.js" />
+    <Content Include="ext-2.2\source\widgets\ColorPalette.js" />
+    <Content Include="ext-2.2\source\widgets\Component.js" />
+    <Content Include="ext-2.2\source\widgets\ComponentMgr.js" />
+    <Content Include="ext-2.2\source\widgets\Container.js" />
+    <Content Include="ext-2.2\source\widgets\CycleButton.js" />
+    <Content Include="ext-2.2\source\widgets\DataView.js" />
+    <Content Include="ext-2.2\source\widgets\DatePicker.js" />
+    <Content Include="ext-2.2\source\widgets\Editor.js" />
+    <Content Include="ext-2.2\source\widgets\form\Action.js" />
+    <Content Include="ext-2.2\source\widgets\form\BasicForm.js" />
+    <Content Include="ext-2.2\source\widgets\form\Checkbox.js" />
+    <Content Include="ext-2.2\source\widgets\form\CheckboxGroup.js" />
+    <Content Include="ext-2.2\source\widgets\form\Combo.js" />
+    <Content Include="ext-2.2\source\widgets\form\DateField.js" />
+    <Content Include="ext-2.2\source\widgets\form\Field.js" />
+    <Content Include="ext-2.2\source\widgets\form\FieldSet.js" />
+    <Content Include="ext-2.2\source\widgets\form\Form.js" />
+    <Content Include="ext-2.2\source\widgets\form\Hidden.js" />
+    <Content Include="ext-2.2\source\widgets\form\HtmlEditor.js" />
+    <Content Include="ext-2.2\source\widgets\form\Label.js" />
+    <Content Include="ext-2.2\source\widgets\form\NumberField.js" />
+    <Content Include="ext-2.2\source\widgets\form\Radio.js" />
+    <Content Include="ext-2.2\source\widgets\form\RadioGroup.js" />
+    <Content Include="ext-2.2\source\widgets\form\TextArea.js" />
+    <Content Include="ext-2.2\source\widgets\form\TextField.js" />
+    <Content Include="ext-2.2\source\widgets\form\TimeField.js" />
+    <Content Include="ext-2.2\source\widgets\form\TriggerField.js" />
+    <Content Include="ext-2.2\source\widgets\form\VTypes.js" />
+    <Content Include="ext-2.2\source\widgets\grid\AbstractSelectionModel.js" />
+    <Content Include="ext-2.2\source\widgets\grid\CellSelectionModel.js" />
+    <Content Include="ext-2.2\source\widgets\grid\CheckboxSelectionModel.js" />
+    <Content Include="ext-2.2\source\widgets\grid\ColumnDD.js" />
+    <Content Include="ext-2.2\source\widgets\grid\ColumnModel.js" />
+    <Content Include="ext-2.2\source\widgets\grid\ColumnSplitDD.js" />
+    <Content Include="ext-2.2\source\widgets\grid\EditorGrid.js" />
+    <Content Include="ext-2.2\source\widgets\grid\GridDD.js" />
+    <Content Include="ext-2.2\source\widgets\grid\GridEditor.js" />
+    <Content Include="ext-2.2\source\widgets\grid\GridPanel.js" />
+    <Content Include="ext-2.2\source\widgets\grid\GridView.js" />
+    <Content Include="ext-2.2\source\widgets\grid\GroupingView.js" />
+    <Content Include="ext-2.2\source\widgets\grid\PropertyGrid.js" />
+    <Content Include="ext-2.2\source\widgets\grid\RowNumberer.js" />
+    <Content Include="ext-2.2\source\widgets\grid\RowSelectionModel.js" />
+    <Content Include="ext-2.2\source\widgets\Layer.js" />
+    <Content Include="ext-2.2\source\widgets\layout\AbsoluteLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\AccordionLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\AnchorLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\BorderLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\CardLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\ColumnLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\ContainerLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\FitLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\FormLayout.js" />
+    <Content Include="ext-2.2\source\widgets\layout\TableLayout.js" />
+    <Content Include="ext-2.2\source\widgets\LoadMask.js" />
+    <Content Include="ext-2.2\source\widgets\menu\Adapter.js" />
+    <Content Include="ext-2.2\source\widgets\menu\BaseItem.js" />
+    <Content Include="ext-2.2\source\widgets\menu\CheckItem.js" />
+    <Content Include="ext-2.2\source\widgets\menu\ColorItem.js" />
+    <Content Include="ext-2.2\source\widgets\menu\ColorMenu.js" />
+    <Content Include="ext-2.2\source\widgets\menu\DateItem.js" />
+    <Content Include="ext-2.2\source\widgets\menu\DateMenu.js" />
+    <Content Include="ext-2.2\source\widgets\menu\Item.js" />
+    <Content Include="ext-2.2\source\widgets\menu\Menu.js" />
+    <Content Include="ext-2.2\source\widgets\menu\MenuMgr.js" />
+    <Content Include="ext-2.2\source\widgets\menu\Separator.js" />
+    <Content Include="ext-2.2\source\widgets\menu\TextItem.js" />
+    <Content Include="ext-2.2\source\widgets\MessageBox.js" />
+    <Content Include="ext-2.2\source\widgets\PagingToolbar.js" />
+    <Content Include="ext-2.2\source\widgets\Panel.js" />
+    <Content Include="ext-2.2\source\widgets\PanelDD.js" />
+    <Content Include="ext-2.2\source\widgets\ProgressBar.js" />
+    <Content Include="ext-2.2\source\widgets\Resizable.js" />
+    <Content Include="ext-2.2\source\widgets\Shadow.js" />
+    <Content Include="ext-2.2\source\widgets\Slider.js" />
+    <Content Include="ext-2.2\source\widgets\SplitBar.js" />
+    <Content Include="ext-2.2\source\widgets\SplitButton.js" />
+    <Content Include="ext-2.2\source\widgets\StatusBar.js" />
+    <Content Include="ext-2.2\source\widgets\TabPanel.js" />
+    <Content Include="ext-2.2\source\widgets\tips\QuickTip.js" />
+    <Content Include="ext-2.2\source\widgets\tips\QuickTips.js" />
+    <Content Include="ext-2.2\source\widgets\tips\Tip.js" />
+    <Content Include="ext-2.2\source\widgets\tips\ToolTip.js" />
+    <Content Include="ext-2.2\source\widgets\Toolbar.js" />
+    <Content Include="ext-2.2\source\widgets\tree\AsyncTreeNode.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeDragZone.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeDropZone.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeEditor.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeEventModel.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeFilter.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeLoader.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeNode.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeNodeUI.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreePanel.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeSelectionModel.js" />
+    <Content Include="ext-2.2\source\widgets\tree\TreeSorter.js" />
+    <Content Include="ext-2.2\source\widgets\Viewport.js" />
+    <Content Include="ext-2.2\source\widgets\Window.js" />
+    <Content Include="ext-2.2\source\widgets\WindowManager.js" />
+    <Content Include="flow_img\index.html" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\arrow.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\data.xml" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\filelist.xml" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\find.js" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\frameset.js" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\fullpage.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\gif_1.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\gif_1.htm" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\gif_1.js" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\go.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\keys.js" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\maximize.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\minimize.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\minus.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\panminus.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\panplus.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\plus.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\tick-foc.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\tick-off.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\tick-on.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\toc.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\toc2.gif" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\toolbar.htm" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\visio.css" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\vml_1.htm" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\vml_1.js" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\widgets.htm" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\zoom.htm" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.htm" />
+    <Content Include="images\IMG_6467.JPG" />
+    <Content Include="index.html" />
+    <Content Include="images\bar.js" />
+    <Content Include="images\checked.gif" />
+    <Content Include="images\common.css" />
+    <Content Include="images\di_bar.gif" />
+    <Content Include="images\FClose.gif" />
+    <Content Include="images\footer.js" />
+    <Content Include="images\FOpen.gif" />
+    <Content Include="images\ge.gif" />
+    <Content Include="images\head_new.js" />
+    <Content Include="images\image_add.png" />
+    <Content Include="images\IMG_6313.PNG" />
+    <Content Include="images\IMG_6314.PNG" />
+    <Content Include="images\layout-icon.gif" />
+    <Content Include="images\left_di.gif" />
+    <Content Include="images\left_down.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\lookup.gif" />
+    <Content Include="images\Main.css" />
+    <Content Include="images\main.jpg" />
+    <Content Include="images\mainstyle.css" />
+    <Content Include="images\menu_di.gif" />
+    <Content Include="images\menu_mid.gif" />
+    <Content Include="images\null.gif" />
+    <Content Include="images\p3_f_point1.gif" />
+    <Content Include="images\pm.js" />
+    <Content Include="images\point1.gif" />
+    <Content Include="images\point2.gif" />
+    <Content Include="images\point_line.gif" />
+    <Content Include="images\se_main.css" />
+    <Content Include="images\tab1.gif" />
+    <Content Include="images\tableft10.gif" />
+    <Content Include="images\tabright10.gif" />
+    <Content Include="images\unchecked.gif" />
+    <Content Include="Js\calendar.js" />
+    <Content Include="echarts.js" />
+    <Content Include="Js\echarts.min.js" />
+    <Content Include="Js\ext\ext-all.js" />
+    <Content Include="Js\ext\ext-base.js" />
+    <Content Include="Js\ext\ext-jquery-adapter.js" />
+    <Content Include="Js\ext\ext-lang-zh_CN.js" />
+    <Content Include="Js\ext\FileUploadField.js" />
+    <Content Include="Js\ext\jquery.js" />
+    <Content Include="Js\jquery.js" />
+    <Content Include="Js\Prototype151.js" />
+    <Content Include="Js\tabpane.js" />
+    <Content Include="Js\utils.js" />
+    <Content Include="Js\validate\images\checked.gif" />
+    <Content Include="Js\validate\images\unchecked.gif" />
+    <Content Include="Js\validate\jquery.validate.css" />
+    <Content Include="Js\validate\jquery.validate.js" />
+    <Content Include="Js\validate\messages_cn.js" />
+    <Content Include="m_filter.aspx" />
+    <Content Include="filter.aspx" />
+    <Content Include="front\Css\mobile_web.css" />
+    <Content Include="front\Image\home4.jpg" />
+    <Content Include="front\Image\icon-address.png" />
+    <Content Include="front\Image\icon-author.png" />
+    <Content Include="images\404.png" />
+    <Content Include="images\add.gif" />
+    <Content Include="images\add.png" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\btnbg.png" />
+    <Content Include="images\btnbg1.png" />
+    <Content Include="images\btnbg2.png" />
+    <Content Include="images\button.png" />
+    <Content Include="images\buttonbg.png" />
+    <Content Include="images\c01.png" />
+    <Content Include="images\c02.png" />
+    <Content Include="images\c03.png" />
+    <Content Include="images\cbg.png" />
+    <Content Include="images\clist.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\close1.png" />
+    <Content Include="images\cloud.png" />
+    <Content Include="images\con_bg.png" />
+    <Content Include="images\d01.png" />
+    <Content Include="images\d02.png" />
+    <Content Include="images\d03.png" />
+    <Content Include="images\d04.png" />
+    <Content Include="images\d05.png" />
+    <Content Include="images\d06.png" />
+    <Content Include="images\d07.png" />
+    <Content Include="images\diskbg.png" />
+    <Content Include="images\dp.png" />
+    <Content Include="images\f01.png" />
+    <Content Include="images\f02.png" />
+    <Content Include="images\f03.png" />
+    <Content Include="images\f04.png" />
+    <Content Include="images\f05.png" />
+    <Content Include="images\f06.png" />
+    <Content Include="images\glyphicons-halflings-white.png" />
+    <Content Include="images\glyphicons-halflings.png" />
+    <Content Include="images\help.png" />
+    <Content Include="images\i01.png" />
+    <Content Include="images\i02.png" />
+    <Content Include="images\i03.png" />
+    <Content Include="images\i04.png" />
+    <Content Include="images\i05.png" />
+    <Content Include="images\i06.png" />
+    <Content Include="images\i07.png" />
+    <Content Include="images\i08.png" />
+    <Content Include="images\i09.png" />
+    <Content Include="images\iadd.png" />
+    <Content Include="images\ibtnbg.png" />
+    <Content Include="images\ico01.png" />
+    <Content Include="images\ico02.png" />
+    <Content Include="images\ico03.png" />
+    <Content Include="images\ico04.png" />
+    <Content Include="images\ico05.png" />
+    <Content Include="images\ico06.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\icon01.png" />
+    <Content Include="images\icon02.png" />
+    <Content Include="images\icon03.png" />
+    <Content Include="images\icon04.png" />
+    <Content Include="images\icon05.png" />
+    <Content Include="images\icon06.png" />
+    <Content Include="images\icon2.png" />
+    <Content Include="images\img01.png" />
+    <Content Include="images\img02.png" />
+    <Content Include="images\img03.png" />
+    <Content Include="images\img04.png" />
+    <Content Include="images\img05.png" />
+    <Content Include="images\img06.png" />
+    <Content Include="images\img07.png" />
+    <Content Include="images\img08.png" />
+    <Content Include="images\img09.png" />
+    <Content Include="images\img10.png" />
+    <Content Include="images\img11.png" />
+    <Content Include="images\img12.png" />
+    <Content Include="images\img13.png" />
+    <Content Include="images\img14.png" />
+    <Content Include="images\img15.png" />
+    <Content Include="images\input.png" />
+    <Content Include="images\inputbg.gif" />
+    <Content Include="images\itabbg.png" />
+    <Content Include="images\itabbg1.png" />
+    <Content Include="images\leftico.png" />
+    <Content Include="images\leftico01.png" />
+    <Content Include="images\leftico02.png" />
+    <Content Include="images\leftico03.png" />
+    <Content Include="images\leftico04.png" />
+    <Content Include="images\leftline.gif" />
+    <Content Include="images\leftmenubg.gif" />
+    <Content Include="images\lefttop.gif" />
+    <Content Include="images\libg.png" />
+    <Content Include="images\light.png" />
+    <Content Include="images\line.gif" />
+    <Content Include="images\line1.png" />
+    <Content Include="images\list.gif" />
+    <Content Include="images\list1.gif" />
+    <Content Include="images\list2.png" />
+    <Content Include="images\loginbg1.png" />
+    <Content Include="images\loginbg2.png" />
+    <Content Include="images\loginbg3.png" />
+    <Content Include="images\logininfo.png" />
+    <Content Include="images\loginlogo.png" />
+    <Content Include="images\loginpassword.png" />
+    <Content Include="images\loginsj.png" />
+    <Content Include="images\loginuser.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_820.jpg" />
+    <Content Include="images\logo_jc.jpg" />
+    <Content Include="images\logo_ym.jpg" />
+    <Content Include="images\msg.png" />
+    <Content Include="images\msg_bg.png" />
+    <Content Include="images\msg_box.png" />
+    <Content Include="images\nav.png" />
+    <Content Include="images\navbg.png" />
+    <Content Include="images\next.gif" />
+    <Content Include="images\nopic.jpg" />
+    <Content Include="images\pic1.jpg" />
+    <Content Include="images\pre.gif" />
+    <Content Include="images\progressbar_microsoft.gif" />
+    <Content Include="images\px.gif" />
+    <Content Include="images\righttop.gif" />
+    <Content Include="images\rlist.gif" />
+    <Content Include="images\search.png" />
+    <Content Include="images\sj.png" />
+    <Content Include="images\sun.png" />
+    <Content Include="images\t01.png" />
+    <Content Include="images\t02.png" />
+    <Content Include="images\t03.png" />
+    <Content Include="images\t04.png" />
+    <Content Include="images\t05.png" />
+    <Content Include="images\tbg.png" />
+    <Content Include="images\tcbg.gif" />
+    <Content Include="images\th.gif" />
+    <Content Include="images\ticon.png" />
+    <Content Include="images\time.png" />
+    <Content Include="images\toolbg.gif" />
+    <Content Include="images\topbg.gif" />
+    <Content Include="images\topleft.jpg" />
+    <Content Include="images\topright.jpg" />
+    <Content Include="images\ub1.png" />
+    <Content Include="images\uew_icon.png" />
+    <Content Include="images\uew_icon_hover.png" />
+    <Content Include="images\ulist.png" />
+    <Content Include="images\user.png" />
+    <Content Include="images\userbg.png" />
+    <Content Include="images\x_bg.png" />
+    <Content Include="images\z2.jpg" />
+    <Content Include="images\z3.jpg" />
+    <Content Include="images\z4.jpg" />
+    <Content Include="images\三角.png" />
+    <Content Include="images\bg_add.jpg" />
+    <Content Include="images\图例.png" />
+    <Content Include="images\l.png" />
+    <Content Include="images\图片2.png" />
+    <Content Include="images\圆.png" />
+    <Content Include="images\棕.png" />
+    <Content Include="images\橙.png" />
+    <Content Include="images\白.png" />
+    <Content Include="images\绿.png" />
+    <Content Include="images\蓝.png" />
+    <Content Include="index1.aspx" />
+    <Content Include="Js\artDialog\artDialog.js" />
+    <Content Include="Js\artDialog\artDialog.source.js" />
+    <Content Include="Js\artDialog\index.html" />
+    <Content Include="Js\artDialog\jquery.artDialog.js" />
+    <Content Include="Js\artDialog\jquery.artDialog.source.js" />
+    <Content Include="Js\artDialog\license.txt" />
+    <Content Include="Js\artDialog\plugins\iframeTools.js" />
+    <Content Include="Js\artDialog\plugins\iframeTools.source.js" />
+    <Content Include="Js\artDialog\skins\aero.css" />
+    <Content Include="Js\artDialog\skins\aero\aero_s.png" />
+    <Content Include="Js\artDialog\skins\aero\aero_s2.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_close.hover.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_close.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_e.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_n.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_ne.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_nw.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_s.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_se.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_sw.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_title_icon.png" />
+    <Content Include="Js\artDialog\skins\aero\ie6\aui_w.png" />
+    <Content Include="Js\artDialog\skins\black.css" />
+    <Content Include="Js\artDialog\skins\black\bg.png" />
+    <Content Include="Js\artDialog\skins\black\bg2.png" />
+    <Content Include="Js\artDialog\skins\black\bg_css3.png" />
+    <Content Include="Js\artDialog\skins\black\bg_css3_2.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\close.hover.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\close.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\e.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\n.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\ne.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\nw.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\s.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\se.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\sw.png" />
+    <Content Include="Js\artDialog\skins\black\ie6\w.png" />
+    <Content Include="Js\artDialog\skins\blue.css" />
+    <Content Include="Js\artDialog\skins\blue\bg.png" />
+    <Content Include="Js\artDialog\skins\blue\bg2.png" />
+    <Content Include="Js\artDialog\skins\blue\bg_css3.png" />
+    <Content Include="Js\artDialog\skins\blue\bg_css3_2.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\close.hover.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\close.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\e.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\n.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\ne.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\nw.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\s.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\se.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\sw.png" />
+    <Content Include="Js\artDialog\skins\blue\ie6\w.png" />
+    <Content Include="Js\artDialog\skins\chrome.css" />
+    <Content Include="Js\artDialog\skins\chrome\border.png" />
+    <Content Include="Js\artDialog\skins\chrome\chrome_s.png" />
+    <Content Include="Js\artDialog\skins\default.css" />
+    <Content Include="Js\artDialog\skins\green.css" />
+    <Content Include="Js\artDialog\skins\green\bg.png" />
+    <Content Include="Js\artDialog\skins\green\bg2.png" />
+    <Content Include="Js\artDialog\skins\green\bg_css3.png" />
+    <Content Include="Js\artDialog\skins\green\bg_css3_2.png" />
+    <Content Include="Js\artDialog\skins\green\color_bg.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\close.hover.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\close.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\e.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\n.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\ne.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\nw.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\s.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\se.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\sw.png" />
+    <Content Include="Js\artDialog\skins\green\ie6\w.png" />
+    <Content Include="Js\artDialog\skins\icons\error.png" />
+    <Content Include="Js\artDialog\skins\icons\face-sad.png" />
+    <Content Include="Js\artDialog\skins\icons\face-smile.png" />
+    <Content Include="Js\artDialog\skins\icons\loading.gif" />
+    <Content Include="Js\artDialog\skins\icons\question.png" />
+    <Content Include="Js\artDialog\skins\icons\succeed.png" />
+    <Content Include="Js\artDialog\skins\icons\warning.png" />
+    <Content Include="Js\artDialog\skins\idialog.css" />
+    <Content Include="Js\artDialog\skins\idialog\idialog_s.png" />
+    <Content Include="Js\artDialog\skins\idialog\idialog_s2.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_close.hover.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_close.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_e.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_n.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_ne.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_nw.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_s.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_se.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_sw.png" />
+    <Content Include="Js\artDialog\skins\idialog\ie6\aui_w.png" />
+    <Content Include="Js\artDialog\skins\opera.css" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_close.hover.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_close.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_e.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_n.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_ne.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_nw.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_s.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_se.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_sw.png" />
+    <Content Include="Js\artDialog\skins\opera\ie6\aui_w.png" />
+    <Content Include="Js\artDialog\skins\opera\s1.png" />
+    <Content Include="Js\artDialog\skins\opera\s2.png" />
+    <Content Include="Js\artDialog\skins\simple.css" />
+    <Content Include="Js\artDialog\skins\twitter.css" />
+    <Content Include="Js\bootstrap.file-input.js" />
+    <Content Include="Js\bootstrap.js" />
+    <Content Include="Js\bootstrap.min.js" />
+    <Content Include="Js\ckform.js" />
+    <Content Include="Js\cloud.js" />
+    <Content Include="Js\common.js" />
+    <Content Include="Js\formValidator.js" />
+    <Content Include="Js\formValidatorRegex.js" />
+    <Content Include="Js\jquery1.js" />
+    <Content Include="log.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="map.aspx" />
+    <Content Include="m_ban.aspx" />
+    <Content Include="m_gaoshi.aspx" />
+    <Content Include="m_lvyou.aspx" />
+    <Content Include="m_other.aspx" />
+    <Content Include="m_warn.aspx" />
+    <Content Include="m_zhilu.aspx" />
+    <Content Include="m_zhishi.aspx" />
+    <Content Include="search.aspx" />
+    <Content Include="sign_edit.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chart.aspx.cs">
+      <DependentUpon>chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chart.aspx.designer.cs">
+      <DependentUpon>chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="encoding.aspx.cs">
+      <DependentUpon>encoding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="encoding.aspx.designer.cs">
+      <DependentUpon>encoding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_filter.aspx.cs">
+      <DependentUpon>m_filter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_filter.aspx.designer.cs">
+      <DependentUpon>m_filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="filter.aspx.cs">
+      <DependentUpon>filter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filter.aspx.designer.cs">
+      <DependentUpon>filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index1.aspx.cs">
+      <DependentUpon>index1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index1.aspx.designer.cs">
+      <DependentUpon>index1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map.aspx.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map.aspx.designer.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_ban.aspx.cs">
+      <DependentUpon>m_ban.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_ban.aspx.designer.cs">
+      <DependentUpon>m_ban.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_gaoshi.aspx.cs">
+      <DependentUpon>m_gaoshi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_gaoshi.aspx.designer.cs">
+      <DependentUpon>m_gaoshi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_lvyou.aspx.cs">
+      <DependentUpon>m_lvyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_lvyou.aspx.designer.cs">
+      <DependentUpon>m_lvyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_other.aspx.cs">
+      <DependentUpon>m_other.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_other.aspx.designer.cs">
+      <DependentUpon>m_other.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_warn.aspx.cs">
+      <DependentUpon>m_warn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_warn.aspx.designer.cs">
+      <DependentUpon>m_warn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_zhilu.aspx.cs">
+      <DependentUpon>m_zhilu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_zhilu.aspx.designer.cs">
+      <DependentUpon>m_zhilu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_zhishi.aspx.cs">
+      <DependentUpon>m_zhishi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_zhishi.aspx.designer.cs">
+      <DependentUpon>m_zhishi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sign_edit.aspx.cs">
+      <DependentUpon>sign_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sign_edit.aspx.designer.cs">
+      <DependentUpon>sign_edit.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\table\images\Thumbs.db" />
+    <Content Include="Css\table\xtab.css.bak" />
+    <Content Include="Js\CVS\Entries" />
+    <Content Include="Js\CVS\Repository" />
+    <Content Include="Js\CVS\Root" />
+    <Content Include="Js\ext\CVS\Entries" />
+    <Content Include="Js\ext\CVS\Repository" />
+    <Content Include="Js\ext\CVS\Root" />
+    <Content Include="Js\tabpane.js.bak" />
+    <Content Include="Js\validate\CVS\Entries" />
+    <Content Include="Js\validate\CVS\Repository" />
+    <Content Include="Js\validate\CVS\Root" />
+    <Content Include="Js\validate\images\CVS\Entries" />
+    <Content Include="Js\validate\images\CVS\Repository" />
+    <Content Include="Js\validate\images\CVS\Root" />
+    <Content Include="images\vssver.scc" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\clear-trigger.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\date-trigger.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\search-trigger.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\form\trigger.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\shadow-c.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\left-corners.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\left-right.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\right-corners.psd" />
+    <Content Include="Css\ext-2.2\resources\images\default\window\top-bottom.psd" />
+    <Content Include="Css\ext-2.2\resources\images\gray\window\left-corners.pspimage" />
+    <Content Include="Css\ext-2.2\resources\resources.jsb" />
+    <Content Include="Css\ext-2.2\source\ext.jsb" />
+    <Content Include="ext-2.2\resources\images\default\form\clear-trigger.psd" />
+    <Content Include="ext-2.2\resources\images\default\form\date-trigger.psd" />
+    <Content Include="ext-2.2\resources\images\default\form\search-trigger.psd" />
+    <Content Include="ext-2.2\resources\images\default\form\trigger.psd" />
+    <Content Include="ext-2.2\resources\images\default\shadow-c.psd" />
+    <Content Include="ext-2.2\resources\images\default\window\left-corners.psd" />
+    <Content Include="ext-2.2\resources\images\default\window\left-right.psd" />
+    <Content Include="ext-2.2\resources\images\default\window\right-corners.psd" />
+    <Content Include="ext-2.2\resources\images\default\window\top-bottom.psd" />
+    <Content Include="ext-2.2\resources\images\gray\window\left-corners.pspimage" />
+    <Content Include="ext-2.2\resources\resources.jsb" />
+    <Content Include="ext-2.2\source\ext.jsb" />
+    <Content Include="flow_img\source\项目立项与前期调研V2.files\vml_1.emz" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YFBLL\YFBLL.csproj">
+      <Project>{c927dd43-4421-4625-8fb5-8ee9f734fa92}</Project>
+      <Name>YFBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YFDAL\YFDAL.csproj">
+      <Project>{991d6e62-8f0b-40c4-8981-d6b82d887d62}</Project>
+      <Name>YFDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YFModel\YFModel.csproj">
+      <Project>{fa315088-5085-416f-9296-aa8d77c37cc0}</Project>
+      <Name>YFModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YFUtility\YFUtility.csproj">
+      <Project>{7b21d4a7-625f-4457-b5ab-febb90ef68b0}</Project>
+      <Name>YFUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52363</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44382/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
